@@ -5,6 +5,7 @@ import firebaseConnection from '../helpers/data/connection';
 import Auth from '../components/Auth/Auth';
 
 import './App.scss';
+import MyNavbar from '../components/MyNavbar/MyNavbar';
 
 firebaseConnection.firebaseApp();
 
@@ -32,6 +33,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <MyNavbar authed={authed} />
           <button className='btn btn-danger'>PINTERST</button>
           {/* if they are athenticated, load the board */}
           {/* else show login button */}
