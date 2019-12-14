@@ -3,9 +3,10 @@ import firebase from 'firebase/app';
 
 import firebaseConnection from '../helpers/data/connection';
 import Auth from '../components/Auth/Auth';
+import MyNavbar from '../components/MyNavbar/MyNavbar';
+import BoardsContainer from '../components/BoardsContainer/BoardsContainer';
 
 import './App.scss';
-import MyNavbar from '../components/MyNavbar/MyNavbar';
 
 firebaseConnection.firebaseApp();
 
@@ -38,7 +39,7 @@ class App extends React.Component {
           {/* if they are athenticated, load the board */}
           {/* else show login button */}
           {
-            (authed) ? (<div>You logged in</div>) : (<Auth />)
+            (authed) ? (<BoardsContainer/>) : (<Auth />)
           }
       </div>
     );
