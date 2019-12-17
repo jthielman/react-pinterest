@@ -22,7 +22,6 @@ class SingleBoard extends React.Component {
         this.setState({ pins });
       })
       .catch((errFromGetPinsByBoardId) => console.error(errFromGetPinsByBoardId));
-
   }
 
   componentDidMount() {
@@ -40,7 +39,6 @@ class SingleBoard extends React.Component {
     pinData.deletePin(pinId)
       .then(() => {
         this.getPinData(selectedBoardId);
-
       })
       .catch((errFromDeletePin) => console.error(errFromDeletePin));
   };
