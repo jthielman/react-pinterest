@@ -22,7 +22,7 @@ class BoardForm extends React.Component {
       uid: authData.getUid(),
     };
     addBoard(newBoard);
-    this.setState({ boardName: '', boardDescription: ''});
+    this.setState({ boardName: '', boardDescription: '' });
   }
 
   nameChange = (e) => {
