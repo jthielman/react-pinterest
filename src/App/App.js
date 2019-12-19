@@ -52,7 +52,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <MyNavbar authed={authed} />
-          <button className='btn btn-danger'>PINTERST</button>
           {/* if they are athenticated, load the board */}
           {/* else show login button */}
           {
